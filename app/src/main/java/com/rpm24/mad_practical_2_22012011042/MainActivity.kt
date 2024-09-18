@@ -22,32 +22,26 @@ class MainActivity : AppCompatActivity() {
         }
         showToastMessage("onCreate function called")
     }
-
     override fun onStart() {
         super.onStart()
         showSneckBarMessage("onStart function called")
     }
-
     override fun onResume() {
         super.onResume()
         showToastMessage("onResume function called")
     }
-
     override fun onPause() {
         super.onPause()
         showSneckBarMessage("onPause function called")
     }
-
     override fun onStop() {
         super.onStop()
         showToastMessage("onStop function called")
     }
-
     override fun onRestart() {
         super.onRestart()
         showSneckBarMessage("onRestart function called")
     }
-
     override fun onDestroy() {
         super.onDestroy()
         showToastMessage("onDestroy function called")
@@ -56,7 +50,6 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, msg)
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
-
     private fun showSneckBarMessage(msg:String){
         Log.i(TAG, msg)
         Snackbar.make(findViewById(R.id.main), msg, Snackbar.LENGTH_SHORT).show()
